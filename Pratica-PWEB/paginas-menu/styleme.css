@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 1200px;
+   font-size: 18px;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.header {
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 15px;
+   background: #871008;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 88px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.dropdown:hover .features-menu {
+  display: flex;
+  flex-direction: column;
+  background: #dd9292;
+  border-radius: 5px;
+  padding-top: 60px;
+
+  position: absolute;
+  top: -25px;
+  left: -30px;
+    z-index: 1;
+}
+.features-menu {                    /* Adicione isso como uma nova regra */
+  display: none;
+}
+ .features-menu > li {
+ 
+  list-style: none;
+  border-bottom: 1px solid #000000;
+
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.features-menu > li:last-of-type {
+  border-bottom: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown > span {
+  z-index: 2;
+  position: relative;  /* Isso é importante! */
+  cursor: pointer;
+}
+.corpo-pag{
+  color: #ffffff;
+  background:black;
+  padding: 0 40px 10px 20px;
+}
+h1{
+  color: #a8f5b7ff;
+
+}
+h2{
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #000000;
+  color:#bcdafb;
+}
+h3{
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
+  color:#fbbcbc;
+}
+.text-um{
+  margin: 25px;
+  color: #f78282ff;
+}
+.wow{
+  color: #f79797ff;
+  font-size: 22px;
+}
+.tituhis{
+  font-size: 30px;
+  color: #f5c7a8ff;
+}
+.imgarc{
+   width: 1000px;
+  
+}
+.cont {
+  
+}
+.article-image-um {
+  float: left;
+  width: 1260px;
+  height: 700px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #fde7e7;
+  color: black;
+  border: 2px solid #fe9c7c;
+  font-size: 22px;
+}
+
+.button1:hover {
+  background-color: #ffa047;
+  color: white;
+}
+/* -----------------------------------------------------------------------------------------------*/
+.holder {
+    display: flex;
+    justify-content: center;
+}
+.imagem {
+  width: 200px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.imagem::after {
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+form {
+    border: 1px solid whitesmoke;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+
+form input, form button {
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+}
+
+form button {
+    cursor: pointer;
+    background: none;
+    color: whitesmoke;
+}
+
+form button:hover {
+    background-color: whitesmoke;
+    color: blueviolet;
+}
+
+
+.horizontal-section {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+
+  /* visual styling */
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.app-icon {
+  scroll-snap-align: start;
+
+  /* visual styling */
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  background: red;
+  border-radius: 20px;
+}
+.phone {
+  background: url(../images/ingleshistoriasemquadrinhos.jpg);
+  width: 1100px;
+  height: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+.mock-section {
+  height: 200px;
+  width: calc(100% - 40px);
+  background: url(../images/hqs2.jpg);
+  
+  border-radius: 20px;
+}
+
+.app-icon:nth-child(1) {
+  background: url(../images/capa1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+   width: 200px;
+  height: 300px;
+  border-color: coral;
+  border-radius: 20px;
+}
+
+.app-icon:nth-child(2) {
+  background: url(../images/capa2.jpg);
+  width: 200px;
+   height: 300px;
+}
+
+.app-icon:nth-child(3) {
+   background: url(../images/capa3.jpg);
+  width: 200px;
+   height: 300px;
+}
+
+.app-icon:nth-child(4) {
+  background: url(../images/capa4.jpg);
+   height: 300px;
+}
+
+.app-icon:nth-child(5) {
+  background: url(../images/capa5.jpg);
+  width: 200px;
+   height: 300px;
+}
+
+.app-icon:nth-child(6) {
+   background: url(../images/capa6.jpg);
+  width: 200px;
+   height: 300px;
+}
+
+.app-icon:nth-child(7) {
+   background: url(../images/capa7.jpg);
+  width: 200px;
+   height: 300px;
+}
+
+.app-icon:nth-child(8) {
+  background: url(../images/capa8.jpg);
+  width: 200px;
+   height: 300px;
+}
